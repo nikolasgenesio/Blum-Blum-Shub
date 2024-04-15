@@ -13,3 +13,11 @@ x_{n+1} = (x_n)^2 \mod M
 $$
 
 onde $$M = p*q$$ é o produto de dois números primos muito grandes p e q. Em cada passo do algoritmo, obtém-se um resultado para $x_n$; o resultado é geralmente o bit de paridade de $x_n$ ou um ou mais dos bits menos significativos de $x_n$. Os dois números primos, p e q, devem ser ambos congruentes a 3 (mod 4).
+
+## Instalação do SimPy 
+
+```bash
+# Instale o simpy
+$ pip install simpy
+
+```
