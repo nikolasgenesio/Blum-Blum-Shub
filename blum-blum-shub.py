@@ -7,17 +7,17 @@ def blum_blum_shub(bits=10):
     p = numero_primo()
     q = numero_primo()
 
-    # Calculando n = p * q
-    n = p * q
+    # Calculando M = p * q
+    M = p * q
 
-    # Escolhendo x0 como um número inteiro aleatório entre 1 e n-1
-    x = random.randint(1, n-1)
+    # Escolhendo x0 como um número inteiro aleatório entre 1 e M-1
+    x = random.randint(1, M-1)
 
     # Gerando os bits
     bitstream = ""
     for _ in range(bits):
-        # Calculando x = (x^2) mod n
-        x = (x * x) % n
+        # Calculando x = (x^2) mod M
+        x = (x * x) % M
         
         # Bit menos significativo de x
         bitstream += str(x % 2)
